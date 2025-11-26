@@ -1,11 +1,11 @@
 <?php
 
+use App\Livewire\Homepage\Index;
+use App\Livewire\Umkm\Detail;
+use App\Livewire\Umkm\Index as UmkmIndex;
+use App\Livewire\Welcome;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/login', function () {
-    return view('welcome');
-});
+Route::get('/', Index::class);
+Route::get('/umkm', UmkmIndex::class)->name('umkm.index');
+Route::get('/umkm/{slug}', Detail::class)->name('umkm.detail');
