@@ -27,6 +27,10 @@
         {{ $slot }}
     </main>
 
+    {{-- @if (request()->is('umkm*'))
+        <livewire:umkm.checkout >
+    @endif --}}
+
     <x-footer />
     
     @livewireScripts

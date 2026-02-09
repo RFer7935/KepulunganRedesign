@@ -1,6 +1,6 @@
 <x-container class="py-32">
     <div class="w-full bg-[#FBE9D2]">
-{{-- 
+
         @php
             $slides = [
                 [
@@ -17,9 +17,9 @@
                 ],
             ];
         @endphp
-        <x-carousel :slides="$slides" class="md:h-96 object-cover"/> --}}
+        <x-carousel :slides="$slides" class="md:h-[450px] object-cover"/>
 
-        <div class="carousel rounded-box">
+        {{-- <div class="carousel rounded-box">
             <div class="carousel-item">
                 <img
                 src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
@@ -55,7 +55,7 @@
                 src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
                 alt="Burger" />
             </div>
-        </div>
+        </div> --}}
 
         <!-- Section Title -->
         <h2 class="text-xl font-semibold mt-6">
