@@ -30,10 +30,11 @@
 
          {{-- Menu --}}
          <x-menu activate-by-route>
-            <x-menu-item title="Beranda" icon="o-home" :link="route('admin.dashboard')" />
-            <x-menu-item title="Data Barang" icon="o-square-3-stack-3d" :link="route('admin.products')" />
+            <x-menu-item title="Beranda" icon="o-home" :link="route('admin.dashboard.index')" />
+            <x-menu-item title="Data Barang" icon="o-square-3-stack-3d" :link="route('admin.product.index')" />
             <x-menu-item title="Data Keuangan" icon="o-banknotes" link="/keuangan" />
-            <x-menu-item title="Data Karyawan" icon="o-users" link="/karyawan" />
+            <x-menu-item title="Data UMKM" icon="o-shopping-cart" :link="route('admin.umkm.index')" />
+            <x-menu-item title="Data Karyawan" icon="o-users" :link="route('admin.employee.index')" />
             <x-menu-item title="Pengaturan" icon="o-cog-6-tooth" link="/pengaturan" />
          </x-menu>
 
